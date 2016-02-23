@@ -3,6 +3,9 @@ using System.Collections;
 
 public class Shoot : MonoBehaviour {
 
+
+    private GameObject Ammo;
+
 	// Use this for initialization
 	void Start () {
 	    
@@ -12,5 +15,10 @@ public class Shoot : MonoBehaviour {
 	void Update () {
 	    
 	}
+
+    public void FireProjectile()
+    {
+        //Instantiate<>(Ammo);
+    }
 
 }

@@ -37,21 +37,21 @@ public class Health : MonoBehaviour {
     }
 
     //Unit takes Damage
-    void Damage( int x)
+    public void Damage( int x)
     {
         CurrentHealthValue -= x;
         Debug.Log(gameObject.name + " has been DAMAGED for " + x + "!" );
     }
 
     //Unit Heals Damage
-    void Heal(int x)
+    public void Heal(int x)
     {
         CurrentHealthValue += x;
         Debug.Log(gameObject.name + " has been HEALED for " + x + "!");
     }
 
     //Units Maximum health increases
-    void ChangeMax(int x)
+    public void ChangeMax(int x)
     {
         MaxHealthValue += x;
         Debug.Log(gameObject.name + " 's Max health as INCREASED by " + x + "!");
